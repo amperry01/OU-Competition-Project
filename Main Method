@@ -1,11 +1,142 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class MainOUProject
 {
 	public static Scanner scanner = new Scanner(System.in);
 	
+	// declares the integer to be inputed for each location
+	final static int FRED_JONES_MUSEUM = 1;
+	final static int PHYSICAL_SCIENCE_CENTER = 2;
+	final static int COLLEGE_ART_SCIENCE  = 3;
+	final static int MEMORIAL_LIBRARY = 4;
+	final static int VISITORS_CENTER = 5;
+	final static int COLLEGE_FINE_ARTS = 6;
+	final static int UNION_FOOD_COURT = 7;
+	final static int ENGINEERING_QUAD = 8;
+	final static int SARKEYS_ENERGY_CENTER = 9;
+	final static int MEMORIAL_STADIUM = 10;
+	
+	// declares the string that corresponds to each location 
+		// so that each location can be added and removed from ArrayList
+	final static String FJM = " 1 - Fred Jones Museum";
+	final static String PSC = "2 - Physical Science Center";
+	final static String CAS = "3 - College of Arts & Science";
+	final static String ML = "4 - Memorial Library";
+	final static String VC = "5 - Visitors Center";
+	final static String CFA = "6 - College of Fine Arts";
+	final static String UFC = "7 - Union Food Court";
+	final static String EQ = "8 - Engineering Quad";
+	final static String SEC = "9 - Sarkerys Energy Center";
+	final static String MS = "10 - Memorial Stadium";
+	
+	// declares the variable to store input from the user
+	static int input;
+	
+	/**
+	 * main method
+	 * @param args
+	 */
 	public static void main(String [] args)
 	{
+		// welcome to OU and game day introduction
+		// tell them where they are starting
+		// list options (in an array)
+		// ask where they want to go and ask for input
+		// go to location
+		// give information about location	
+		// ask where to go next
+		// continue to do so until they have reached the field
+
+		// creates ArrayList with each location to be explored before the football stadium
+		ArrayList<String> locationValues = new ArrayList<String>(1);
+		
+		// adds strings to ArrayList
+		locationValues.add(FJM);
+		locationValues.add(PSC);
+		locationValues.add(CAS);
+		locationValues.add(ML);
+		locationValues.add(VC);
+		locationValues.add(CFA);
+		locationValues.add(UFC);
+		locationValues.add(EQ);
+		locationValues.add(SEC);	
+		
+		// prints out original array with all options
+		System.out.println(locationValues);
+		
+		for(int i = 0; i < 10; i++)
+		{
+			System.out.println("Please input your desired location: ");
+			input = scanner.nextInt();
+			
+			if(input == FRED_JONES_MUSEUM && locationValues.contains(FJM))
+			{
+				// go to museum & display information
+				System.out.println("FJM");
+				
+				locationValues.remove(FJM);
+			}
+			else if(input == PHYSICAL_SCIENCE_CENTER && locationValues.contains(PSC))
+			{
+				// go to physical science center
+				
+				locationValues.remove(PSC);
+			}
+			else if(input == COLLEGE_ART_SCIENCE && locationValues.contains(CAS))
+			{
+				// go to physical science center
+				
+				locationValues.remove(CAS);
+			}
+			else if(input == MEMORIAL_LIBRARY && locationValues.contains(ML))
+			{
+				// go to physical science center
+				
+				locationValues.remove(ML);
+			}
+			else if(input == VISITORS_CENTER && locationValues.contains(VC))
+			{
+				// go to physical science center
+				
+				locationValues.remove(VC);
+			}
+			else if(input == COLLEGE_FINE_ARTS && locationValues.contains(CFA))
+			{
+				// go to physical science center
+				
+				locationValues.remove(CFA);
+			}
+			else if(input == UNION_FOOD_COURT && locationValues.contains(UFC))
+			{
+				// go to physical science center
+				
+				locationValues.remove(UFC);
+			}
+			else if(input == ENGINEERING_QUAD && locationValues.contains(EQ))
+			{
+				// go to physical science center
+				
+				locationValues.remove(EQ);
+			}
+			else if(input == SARKEYS_ENERGY_CENTER && locationValues.contains(SEC))
+			{
+				// go to physical science center
+				
+				locationValues.remove(SEC);
+			}
+//			else if(input == MEMORIAL_STADIUM && locationValues.contains(MS))
+//			{
+//				// go to physical science center
+//				
+//				locationValues.remove(MS);
+//			}
+			
+			System.out.println("The following are your remianing options: ");
+			System.out.println(locationValues);
+		}
+		
+		
 		
 	}
 }
