@@ -7,7 +7,7 @@ public class MainOUProject
 	
 	// declares the integer to be inputed for each location
 	final static int FRED_JONES_MUSEUM = 1;
-	final static int PHYSICAL_SCIENCE_CENTER = 2;
+	final static int PRICE_COLLEGE = 2;
 	final static int COLLEGE_ART_SCIENCE  = 3;
 	final static int MEMORIAL_LIBRARY = 4;
 	final static int COLLEGE_FINE_ARTS = 5;
@@ -19,7 +19,7 @@ public class MainOUProject
 	// declares the string that corresponds to each location 
 		// so that each location can be added and removed from ArrayList
 	final static String FJM = " 1 - Fred Jones Museum";
-	final static String PSC = "2 - Physical Science Center";
+	final static String PC = "2 - Price College";
 	final static String CAS = "3 - College of Arts & Science";
 	final static String ML = "4 - Memorial Library";
 	final static String CFA = "5 - College of Fine Arts";
@@ -47,7 +47,7 @@ public class MainOUProject
 		
 		// adds strings to ArrayList
 		locationValues.add(FJM);
-		locationValues.add(PSC);
+		locationValues.add(PC);
 		locationValues.add(CAS);
 		locationValues.add(ML);
 		locationValues.add(CFA);
@@ -81,13 +81,13 @@ public class MainOUProject
 				
 				locationValues.remove(FJM);
 			}
-			else if(input == PHYSICAL_SCIENCE_CENTER && locationValues.contains(PSC))
+			else if(input == PRICE_COLLEGE && locationValues.contains(PC))
 			{
 				// go to physical science center
 				
-				PhysicalScienceCenter();
+				PriceCollege();
 				
-				locationValues.remove(PSC);
+				locationValues.remove(PC);
 			}
 			else if(input == COLLEGE_ART_SCIENCE && locationValues.contains(CAS))
 			{
