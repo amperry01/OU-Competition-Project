@@ -1,0 +1,45 @@
+	public static void FredJonesMuseum()
+	{
+		System.out.println("Fred Jones Mueseum");
+	}
+	
+	public static void PhysicalScienceCenter()
+	{
+		System.out.println("Physical Science Center");
+	}
+	
+	public static void CollegeArtsScience()
+	{
+		System.out.println("College of Arts and Science");
+	}
+	
+	public static void MemorialLibrary()
+	{
+		System.out.println("Memorial Library");
+	}
+	
+	public static void CollegeFineArts()
+	{
+		System.out.println("College of Fine Arts");
+	}
+	
+	public static void UnionFoodCourt()
+	{
+		System.out.println("Union Food Court");
+	}
+	
+	public static void EngineeringQuad()
+	{
+		System.out.println("Engineering Qaud");
+	}
+	
+	public static void SarkeysEnergyCenter()
+	{
+		System.out.println("Sarkeys Energy Center");
+	}
+	
+	public static void MemorialStadium()
+	{
+		System.out.println("Memorial Stadium");
+	}
+}
