@@ -12,11 +12,11 @@
 	}
 	
 	/**
-	 * method to print out Physical Science Center info
+	 * method to print out Price College info
 	 */
-	public static void PhysicalScienceCenter()
+	public static void PriceCollege()
 	{
-		System.out.println("Physical Science Center");
+		System.out.println("Price College");
 	}
 	
 	/**
