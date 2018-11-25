@@ -4,6 +4,7 @@
 	public static void FredJonesMuseum()
 	{
 		System.out.println("Welcome to the Fred Jones Jr. Mueseum of Art!");
+		System.out.println();
 		System.out.println("This museum was founded in 1936 after Lew Wentz and Gordon Matzene gifted the University of Oklahoma with 750 objects of East Asian art. ");
 		System.out.println("The museum is now home to over 20,000 objects and features approximately 40,000 square feet of exhibition space. ");
 		System.out.println("Moreover, thanks to the OU Athletics Department annual gift of 60,000 dollars, the Fred Jones Jr. Museum of Art is even free to visit! ");
