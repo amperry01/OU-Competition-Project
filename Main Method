@@ -10,12 +10,11 @@ public class MainOUProject
 	final static int PHYSICAL_SCIENCE_CENTER = 2;
 	final static int COLLEGE_ART_SCIENCE  = 3;
 	final static int MEMORIAL_LIBRARY = 4;
-	final static int VISITORS_CENTER = 5;
-	final static int COLLEGE_FINE_ARTS = 6;
-	final static int UNION_FOOD_COURT = 7;
-	final static int ENGINEERING_QUAD = 8;
-	final static int SARKEYS_ENERGY_CENTER = 9;
-	final static int MEMORIAL_STADIUM = 10;
+	final static int COLLEGE_FINE_ARTS = 5;
+	final static int UNION_FOOD_COURT = 6;
+	final static int ENGINEERING_QUAD = 7;
+	final static int SARKEYS_ENERGY_CENTER = 8;
+	final static int MEMORIAL_STADIUM = 9;
 	
 	// declares the string that corresponds to each location 
 		// so that each location can be added and removed from ArrayList
@@ -23,14 +22,13 @@ public class MainOUProject
 	final static String PSC = "2 - Physical Science Center";
 	final static String CAS = "3 - College of Arts & Science";
 	final static String ML = "4 - Memorial Library";
-	final static String VC = "5 - Visitors Center";
-	final static String CFA = "6 - College of Fine Arts";
-	final static String UFC = "7 - Union Food Court";
-	final static String EQ = "8 - Engineering Quad";
-	final static String SEC = "9 - Sarkerys Energy Center";
-	final static String MS = "10 - Memorial Stadium";
-	
-	// declares the variable to store input from the user
+	final static String CFA = "5 - College of Fine Arts";
+	final static String UFC = "6 - Union Food Court";
+	final static String EQ = "7 - Engineering Quad";
+	final static String SEC = "8 - Sarkerys Energy Center";
+	final static String MS = "9 - Memorial Stadium";
+
+	// variable for user input
 	static int input;
 	
 	/**
@@ -39,16 +37,12 @@ public class MainOUProject
 	 */
 	public static void main(String [] args)
 	{
-		// welcome to OU and game day introduction
-		// tell them where they are starting
-		// list options (in an array)
-		// ask where they want to go and ask for input
-		// go to location
-		// give information about location	
-		// ask where to go next
-		// continue to do so until they have reached the field
+		
+		// introduction to OU from Introduction method
+		Introduction();
 
-		// creates ArrayList with each location to be explored before the football stadium
+		// creates ArrayList with each location to be explored
+			// excluding visitor center and football stadium
 		ArrayList<String> locationValues = new ArrayList<String>(1);
 		
 		// adds strings to ArrayList
@@ -56,24 +50,34 @@ public class MainOUProject
 		locationValues.add(PSC);
 		locationValues.add(CAS);
 		locationValues.add(ML);
-		locationValues.add(VC);
 		locationValues.add(CFA);
 		locationValues.add(UFC);
 		locationValues.add(EQ);
 		locationValues.add(SEC);	
 		
 		// prints out original array with all options
+		System.out.println("These are the locations in which you can explore with "
+				+ "the corresdponding value for you to enter if you choose to visit that place!");
 		System.out.println(locationValues);
+		System.out.println();
 		
-		for(int i = 0; i < 10; i++)
+		// for loop to visit all locations
+			// runs until all locations have been visited
+		while(locationValues.size() > 0)
 		{
-			System.out.println("Please input your desired location: ");
+			if(locationValues.size() != 1)
+			{
+				System.out.println("Please input the value of your desired location: ");
+			}
+			
 			input = scanner.nextInt();
+			System.out.println();
 			
 			if(input == FRED_JONES_MUSEUM && locationValues.contains(FJM))
 			{
-				// go to museum & display information
-				System.out.println("FJM");
+				// go to museum 
+				
+				FredJonesMuseum();
 				
 				locationValues.remove(FJM);
 			}
@@ -81,62 +85,84 @@ public class MainOUProject
 			{
 				// go to physical science center
 				
+				PhysicalScienceCenter();
+				
 				locationValues.remove(PSC);
 			}
 			else if(input == COLLEGE_ART_SCIENCE && locationValues.contains(CAS))
 			{
-				// go to physical science center
+				// go to College of Arts and Science
+				
+				CollegeArtsScience();
 				
 				locationValues.remove(CAS);
 			}
 			else if(input == MEMORIAL_LIBRARY && locationValues.contains(ML))
 			{
-				// go to physical science center
+				// go to Memorial Library
+				
+				MemorialLibrary();
 				
 				locationValues.remove(ML);
 			}
-			else if(input == VISITORS_CENTER && locationValues.contains(VC))
-			{
-				// go to physical science center
-				
-				locationValues.remove(VC);
-			}
 			else if(input == COLLEGE_FINE_ARTS && locationValues.contains(CFA))
 			{
-				// go to physical science center
+				// go to College of Fine Arts
+				
+				CollegeFineArts();
 				
 				locationValues.remove(CFA);
 			}
 			else if(input == UNION_FOOD_COURT && locationValues.contains(UFC))
 			{
-				// go to physical science center
+				// go to Union Food Court
+				
+				UnionFoodCourt();
 				
 				locationValues.remove(UFC);
 			}
 			else if(input == ENGINEERING_QUAD && locationValues.contains(EQ))
 			{
-				// go to physical science center
+				// go to Engineering Quad
+				
+				EngineeringQuad();
 				
 				locationValues.remove(EQ);
 			}
 			else if(input == SARKEYS_ENERGY_CENTER && locationValues.contains(SEC))
 			{
-				// go to physical science center
+				// go to Sarkeys Energy Center
+				
+				SarkeysEnergyCenter();
 				
 				locationValues.remove(SEC);
 			}
-//			else if(input == MEMORIAL_STADIUM && locationValues.contains(MS))
-//			{
-//				// go to physical science center
-//				
-//				locationValues.remove(MS);
-//			}
 			
-			System.out.println("The following are your remianing options: ");
-			System.out.println(locationValues);
+			System.out.println();
+			
+			if(locationValues.size() != 1 && locationValues.size() != 0)
+			{
+				System.out.println("The following are your remianing options: ");
+				System.out.println(locationValues);
+				System.out.println();
+			}
+			else if(locationValues.size() == 1)
+			{
+				System.out.println("This is your final location to go to before the game!");
+				System.out.println(locationValues);
+				System.out.println("Please enter the value of this location: ");
+			}
 		}
 		
+		System.out.println("Now it's time to see OU play on their home turf! Let's go!!");
+		System.out.println();
 		
+		// go to memorial stadium
+		
+		MemorialStadium();
+		
+		System.out.println();
+		System.out.println("We hope you had a great time exploring OU!");
+		System.out.println("Enjoy the game!");
 		
 	}
-}
