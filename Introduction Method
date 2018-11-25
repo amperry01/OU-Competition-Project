@@ -1,0 +1,17 @@
+	/**
+	 * Introduction to OU as well as where you are going to start and what you are going to do
+	 */
+	public static void Introduction()
+	{
+		System.out.println("Welcome to Oklahoma University!");
+		
+		System.out.println("Today, the goal is to get a feel for a part of OU's campus, discover some of the things OU has to offer, "
+				+ "and make it to the OU football game!");
+		
+		System.out.println("You are currently located at the OU Visitor Center. "
+				+ "Here you can find useful information about each building, sign up for campus tours, "
+				+ "as well as score some campus maps!");
+		System.out.println("Here, you can also get information on all of the activities, clubs, and amazing restaurants around campus.");
+		
+		System.out.println();
+	}
