@@ -3,7 +3,7 @@
 	 */
 	public static void FredJonesMuseum()
 	{
-		System.out.println("Welcome to the Fred Jones Jr. Mueseum of Art!");
+		System.out.println("Welcome to the Fred Jones Jr. Museum of Art!");
 		System.out.println();
 		System.out.println("This museum was founded in 1936 after Lew Wentz and Gordon Matzene gifted the University of Oklahoma with 750 objects of East Asian art. ");
 		System.out.println("The museum is now home to over 20,000 objects and features approximately 40,000 square feet of exhibition space. ");
@@ -16,7 +16,13 @@
 	 */
 	public static void PriceCollege()
 	{
-		System.out.println("Price College");
+		System.out.println("You are now located at Price College!");
+		System.out.println();
+		System.out.println("Before Price College was established, the OU School of Public and Private Business was one of the first schools to obtain AACSB accreditation in 1917. ");
+		System.out.println("This school officially formed the College of Business Administration in 1928 which was then renamed to honor a major benefactor in 1997 to Price College. ");
+		System.out.println("OU’s web page for Price College states that its purpose is to ensure “the enduring global competitiveness of Oklahoma and the nation. ");
+		System.out.println("This college proves its purpose and competitiveness as it has been ranked the number one MBA program in the 2018 Reader Rankings by The Journal Record. ");
+		System.out.println("Price College is definitely one of the best business schools in the nation and would be perfect for anyone wanting to achieve greatness!");
 	}
 	
 	/**
@@ -40,7 +46,15 @@
 	 */
 	public static void MemorialLibrary()
 	{
-		System.out.println("Memorial Library");
+		System.out.println("Welcome to the Bizzell Memorial Library!");
+		System.out.println();
+		System.out.println("The Bizzell Memorial Library connects students and faculty with resources such as technology and skills that helps them avance in research and scholarship that changes the world. ");
+		System.out.println("Here students have access to technologies such as virtual reality, 3D printing, and even artificial intelligence! ");
+		System.out.println("This library features many flexible and collaborative spaces for all the students studying and researching needs. ");
+		System.out.println("If you’re struggling with getting some quiet space to study, the Bizzell Memorial Library even feature the Great Reading Room! ");
+		System.out.println("This space has been known for its beautiful design and for the major works that OU graduate students complete as it is a definite place to simply focus on your work. ");
+		System.out.println("The Bizzell Memorial Library meets the needs of every student on campus as it features so many types of study and innovation spaces. ");
+		System.out.println("You won’t find a better library in the entire state of Oklahoma!");
 	}
 	
 	/**
@@ -60,19 +74,35 @@
 	}
 	
 	/**
-	 * method to print out Union FOod Court info
+	 * method to print out Union Food Court info
 	 */
 	public static void UnionFoodCourt()
 	{
-		System.out.println("Union Food Court");
+		System.out.println("Welcome to the Memorial Union Food Court!");
+		System.out.println();
+		System.out.println("The Memorial Union Food Court is part of the wonderful Memorial Union and has multiple restaurants for students, faculty, staff, and visitors to choose from. ");
+		System.out.println("This food court includes eight different eating options all the way from savory mexican to fast food that you love such as Chick-Fil-A! ");
+		System.out.println("One of the most popular features of this food court is its 24-hour diner! ");
+		System.out.println("With this diner, you’re ensured the ability to fulfill all cravings during your late night study sessions with ease. ");
+		System.out.println("The Memorial Union Food Court has so much to offer and will satisfy just about anyone’s needs. ");
+		System.out.println("You won’t want to miss out on all of the greatness this place has to offer!");
 	}
 	
 	/**
 	 * method to print out Engineering Quad info
 	 */
-	public static void EngineeringQuad()
+	public static void GalloglyEngineering()
 	{
-		System.out.println("Engineering Qaud");
+		System.out.println("Welcome to the Gallogly College of Engineering!");
+		System.out.println();
+		System.out.println("Gallogly College of Engineering strives to be one of the top engineering colleges in the nation. ");
+		System.out.println("Gallogly is the largest engineering program in the entire state with well over 4,000 students and 115 faculty members! ");
+		System.out.println("This college offers a wide variety of degree programs ranging from aerospace and mechanical engineering to earth and energy engineering programs! ");
+		System.out.println("It is no doubt the best engineering school in the state as it offers the unique experience of hands on innovation hubs and facilities such as the ExxonMobil Lawrence G. Rawl Engineering Practice Facility ");
+		System.out.println("This one-of-a-kind facility brought all of the engineering student groups together in one location for a surplus of innovation and support. ");
+		System.out.println("As a part of Gallogly, students have access to this amazing 41,000 square foot facility that offers a practice bay space, bench labs, a student machine shop, ");
+		System.out.println("a student leadership center, an information commons, an information technology help desk, and even tutoring space for all undergraduate engineering students! ");
+		System.out.println("Students at the Gallogly College of Engineering are given the best opportunities to develop their engineering skills making Gallogly one of the best engineering schools in the nation.");
 	}
 	
 	/**
@@ -80,7 +110,15 @@
 	 */
 	public static void SarkeysEnergyCenter()
 	{
-		System.out.println("Sarkeys Energy Center");
+		System.out.println("Now, welcome to the Sarkeys Energy Center!");
+		System.out.println();
+		System.out.println("This is just one of the many great spaces that the University of Oklahoma has to offer.");
+		System.out.println("In Sarkeys Energy Center there are administrative and faculty offices for the school of Chemical, Biological and Materials Science,");
+		System.out.println(" the OU Bioengineering Center along with conference rooms, teaching and research labs.");
+		System.out.println("This building is home to the earth and energy programs such as the Mewbourne School of Petroleum and Geological Engineering");
+		System.out.println("Sarkeys is even home to many of the important seminars and conferences of geophysicists and more year-round!");
+		System.out.println("This facility and its programs are known for their level of excellence in all things earth and energy.");
+		System.out.println("As Sarkeys houses many top programs in the nation, it clearly upholds excellence in all that is offered in the facility.");
 	}
 	
 	/**
