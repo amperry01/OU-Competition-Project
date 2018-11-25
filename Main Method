@@ -12,7 +12,7 @@ public class MainOUProject
 	final static int MEMORIAL_LIBRARY = 4;
 	final static int COLLEGE_FINE_ARTS = 5;
 	final static int UNION_FOOD_COURT = 6;
-	final static int ENGINEERING_QUAD = 7;
+	final static int GALLOGLY_ENGINEERING = 7;
 	final static int SARKEYS_ENERGY_CENTER = 8;
 	final static int MEMORIAL_STADIUM = 9;
 	
@@ -20,11 +20,11 @@ public class MainOUProject
 		// so that each location can be added and removed from ArrayList
 	final static String FJM = " 1 - Fred Jones Museum";
 	final static String PC = "2 - Price College";
-	final static String CAS = "3 - College of Arts & Science";
+	final static String CAS = "3 - College of Arts and Sciences";
 	final static String ML = "4 - Memorial Library";
 	final static String CFA = "5 - College of Fine Arts";
 	final static String UFC = "6 - Union Food Court";
-	final static String EQ = "7 - Engineering Quad";
+	final static String GE = "7 - College of Engineering";
 	final static String SEC = "8 - Sarkerys Energy Center";
 	final static String MS = "9 - Memorial Stadium";
 
@@ -52,7 +52,7 @@ public class MainOUProject
 		locationValues.add(ML);
 		locationValues.add(CFA);
 		locationValues.add(UFC);
-		locationValues.add(EQ);
+		locationValues.add(GE);
 		locationValues.add(SEC);	
 		
 		// prints out original array with all options
@@ -121,13 +121,13 @@ public class MainOUProject
 				
 				locationValues.remove(UFC);
 			}
-			else if(input == ENGINEERING_QUAD && locationValues.contains(EQ))
+			else if(input == GALLOGLY_ENGINEERING && locationValues.contains(GE))
 			{
 				// go to Engineering Quad
 				
-				EngineeringQuad();
+				GalloglyEngineering();
 				
-				locationValues.remove(EQ);
+				locationValues.remove(GE);
 			}
 			else if(input == SARKEYS_ENERGY_CENTER && locationValues.contains(SEC))
 			{
