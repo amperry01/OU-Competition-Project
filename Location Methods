@@ -1,45 +1,100 @@
+	/**
+	 * method to print out Fred Jones Jr. Museum info
+	 */
 	public static void FredJonesMuseum()
 	{
-		System.out.println("Fred Jones Mueseum");
+		System.out.println("Welcome to the Fred Jones Jr. Mueseum of Art!");
+		System.out.println("This museum was founded in 1936 after Lew Wentz and Gordon Matzene gifted the University of Oklahoma with 750 objects of East Asian art. ");
+		System.out.println("The museum is now home to over 20,000 objects and features approximately 40,000 square feet of exhibition space. ");
+		System.out.println("Moreover, thanks to the OU Athletics Department annual gift of 60,000 dollars, the Fred Jones Jr. Museum of Art is even free to visit! ");
+		System.out.println("Feel free to go inside and check out all the amazing collections whenever you can!");
 	}
 	
+	/**
+	 * method to print out Physical Science Center info
+	 */
 	public static void PhysicalScienceCenter()
 	{
 		System.out.println("Physical Science Center");
 	}
 	
+	/**
+	 * method to print out College of Arts and Sciences info
+	 */
 	public static void CollegeArtsScience()
 	{
-		System.out.println("College of Arts and Science");
+		System.out.println("You've now reached the College of Arts and Sciences!");
+		System.out.println();
+		System.out.println("Established in 1909, the College of Arts and Sciences is OU's first and largest college! ");
+		System.out.println("This college is home to four different academic areas: Humanities, Natural Sciences, Social Sciences, and Professional Programs. ");
+		System.out.println("The College of Arts and Sciences is also home  to the very popular and very haunted Ellison Hall! ");
+		System.out.println("Legend has it that a boy that was roller skating on Elm Avenue was hit by a car or had an asthma attack. ");
+		System.out.println("He was then rushed into Hygeia Hall (this is the original name for Ellison Hall) and died. ");
+		System.out.println("Now he haunts the College of Arts and Sciences along with a few other ghosts! ");
+		System.out.println("Beware when you enter! You might just catch a scare...");
 	}
 	
+	/**
+	 * method to print out Memorial Library info
+	 */
 	public static void MemorialLibrary()
 	{
 		System.out.println("Memorial Library");
 	}
 	
+	/**
+	 * method to print out College of Fine Arts info
+	 */
 	public static void CollegeFineArts()
 	{
-		System.out.println("College of Fine Arts");
+		System.out.println("Welcome to the College of Fine Arts!");
+		System.out.println();
+		System.out.println("Fine arts courses were taught at OU beginning in 1893 however, "
+				+ "the College of Fine Arts was officially established in 1924. ");
+		System.out.println("This college is home to the OU School of Visual Arts, School of Dance, the Peggy V. Dow Helmerich School of Drama, ");
+		System.out.println("the School of Music, and the A. Max Weitzenhoffer School of Musical Theatre. ");
+		System.out.println("Moreover, it produces nearly 300 concerts, recitals, dramas, musicals, operas and dance performances each year! ");
+		System.out.println("In addition, this college has more to offer in their fine arts program than any other fine arts program in the state. ");
+		System.out.println("If you want to study anything related to fine arts, the University of Oklahoma should be your top choice!");
 	}
 	
+	/**
+	 * method to print out Union FOod Court info
+	 */
 	public static void UnionFoodCourt()
 	{
 		System.out.println("Union Food Court");
 	}
 	
+	/**
+	 * method to print out Engineering Quad info
+	 */
 	public static void EngineeringQuad()
 	{
 		System.out.println("Engineering Qaud");
 	}
 	
+	/**
+	 * method to print out Sarkeys Energy Center info
+	 */
 	public static void SarkeysEnergyCenter()
 	{
 		System.out.println("Sarkeys Energy Center");
 	}
 	
+	/**
+	 * method to print out Memorial Stadium info
+	 */
 	public static void MemorialStadium()
 	{
-		System.out.println("Memorial Stadium");
+		System.out.println("Welcome to the University of Oklahoma Memorial Stadium!");
+		System.out.println();
+		System.out.println("The OU Memorial Stadium was built beginning in 1921. ");
+		System.out.println("The first game on this football field was held October 20, 1923, and could hold about 16,000 fans. ");
+		System.out.println("Since then, seats have continuously been added and the stadium can now hold up to 84,000 fans! ");
+		System.out.println("The stadium is even home to one of the largest college scoreboards! ");
+		System.out.println("The Sooners have won seven national championships as well as 45 conference championships. ");
+		System.out.println("With all of this in mind, this stadium is no doubt one of the best in all of college football "
+				+ "and is even home to one of the best teams in the nation!");
 	}
 }
