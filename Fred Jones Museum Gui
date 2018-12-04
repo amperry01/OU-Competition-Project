@@ -1,0 +1,71 @@
+//import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JTextArea;
+import java.awt.Font;
+import java.awt.Color;
+
+public class FredJonesMuseum extends JFrame
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FredJonesMuseum frame = new FredJonesMuseum();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FredJonesMuseum() {
+		setAlwaysOnTop(true);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		setBounds(100, 100, 2000, 1000);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(128, 0, 0));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\alype\\Pictures\\Fred Jones Jr. Museum 1.png"));
+		lblNewLabel.setBounds(15, 16, 1372, 912);
+		contentPane.add(lblNewLabel);
+		
+		JTextArea txtrWelcomeToThe = new JTextArea();
+		txtrWelcomeToThe.setBackground(new Color(128, 0, 0));
+		txtrWelcomeToThe.setForeground(Color.WHITE);
+		txtrWelcomeToThe.setFont(new Font("Monospaced", Font.PLAIN, 25));
+		txtrWelcomeToThe.setWrapStyleWord(true);
+		txtrWelcomeToThe.setLineWrap(true);
+		txtrWelcomeToThe.setText("Welcome to the Fred Jones Jr. Museum of Art!\r\n\r\nThis museum was founded in 1936 after Lew Wentz and Gordon Matzene gifted the University of Oklahoma with 750 objects of East Asian art. The museum is now home to over 20,000 objects and features approximately 40,000 square feet of exhibition space. Moreover, thanks to the OU Athletics Department annual gift of 60,000 dollars, the Fred Jones Jr. Museum of Art is even free to visit! Feel free to go inside and check out all the amazing collections whenever you can!");
+		txtrWelcomeToThe.setBounds(1402, 16, 561, 554);
+		contentPane.add(txtrWelcomeToThe);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\alype\\Pictures\\Fred Jones Jr. Museum.png"));
+		lblNewLabel_1.setBounds(1402, 586, 561, 342);
+		contentPane.add(lblNewLabel_1);
+	}
+}
